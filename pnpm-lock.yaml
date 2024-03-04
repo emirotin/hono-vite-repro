@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   hono:
-    specifier: ^4.0.8
-    version: 4.0.8
+    specifier: ^4.0.9
+    version: 4.0.9
 
 devDependencies:
   '@cloudflare/workers-types':
@@ -15,10 +15,10 @@ devDependencies:
     version: 4.20240222.0
   '@hono/vite-cloudflare-pages':
     specifier: ^0.2.5
-    version: 0.2.5(hono@4.0.8)
+    version: 0.2.5(hono@4.0.9)
   '@hono/vite-dev-server':
-    specifier: ^0.8.1
-    version: 0.8.1(hono@4.0.8)
+    specifier: ^0.8.2
+    version: 0.8.2(hono@4.0.9)
   vite:
     specifier: ^5.1.4
     version: 5.1.4
@@ -298,23 +298,23 @@ packages:
     engines: {node: '>=18.14.1'}
     dev: true
 
-  /@hono/vite-cloudflare-pages@0.2.5(hono@4.0.8):
+  /@hono/vite-cloudflare-pages@0.2.5(hono@4.0.9):
     resolution: {integrity: sha512-/Cw4bREPf2OelHDc/2oVXYXemyKz+wXkC+5uK8ZLo8c2JV7vthSchQPWK7O6BGe7al0z5qKVqhTYkfZvuW0T5w==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: '*'
     dependencies:
-      hono: 4.0.8
+      hono: 4.0.9
     dev: true
 
-  /@hono/vite-dev-server@0.8.1(hono@4.0.8):
-    resolution: {integrity: sha512-jwZS2K4r2d7T6+t7aemhn6+ROcggej/UCHF2/UUnbmZUl6DpXP+e1v9nf30x976nvn6FcxlUPhxjhLBdKPsMzg==}
+  /@hono/vite-dev-server@0.8.2(hono@4.0.9):
+    resolution: {integrity: sha512-KD+LkChriPWTZ8oJ4V3qlQA3EqBtdi3qG2a8IVYwAZv9BtPWYN2RzzIERL+Rhzu3TAgqOHcgUsI7MA+e3QL1+g==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: '*'
     dependencies:
       '@hono/node-server': 1.8.2
-      hono: 4.0.8
+      hono: 4.0.9
       miniflare: 3.20240223.0
       minimatch: 9.0.3
     transitivePeerDependencies:
@@ -559,8 +559,8 @@ packages:
     resolution: {integrity: sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==}
     dev: true
 
-  /hono@4.0.8:
-    resolution: {integrity: sha512-zhTXu32vXeEXajsqZVjPfoyO0/fgAKLLmPBpSDzRBMr7zZ5N8yV1FmsfWl2MYtm+MD8hD7knLCovx8Oaqubd4w==}
+  /hono@4.0.9:
+    resolution: {integrity: sha512-XkFx6y6jAl08bGmoy53oGtHl8eHUixvmBulfcghrSySoJD3cW4UfFUa7JDGLOsIeJUv/a9d2pBFQUX7rzRnjvA==}
     engines: {node: '>=16.0.0'}
 
   /miniflare@3.20240223.0:

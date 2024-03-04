@@ -4,12 +4,12 @@
     "dev": "vite"
   },
   "dependencies": {
-    "hono": "^4.0.8"
+    "hono": "^4.0.9"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240222.0",
     "@hono/vite-cloudflare-pages": "^0.2.5",
-    "@hono/vite-dev-server": "^0.8.1",
+    "@hono/vite-dev-server": "^0.8.2",
     "vite": "^5.1.4"
   }
 }
