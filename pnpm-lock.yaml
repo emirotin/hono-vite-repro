@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   hono:
-    specifier: ^4.0.9
-    version: 4.0.9
+    specifier: file:vendor/hono
+    version: file:vendor/hono
 
 devDependencies:
   '@cloudflare/workers-types':
@@ -17,7 +17,7 @@ devDependencies:
     specifier: ^0.2.5
     version: 0.2.5(hono@4.0.9)
   '@hono/vite-dev-server':
-    specifier: ^0.8.2
+    specifier: ^0.8.1
     version: 0.8.2(hono@4.0.9)
   vite:
     specifier: ^5.1.4
@@ -304,7 +304,7 @@ packages:
     peerDependencies:
       hono: '*'
     dependencies:
-      hono: 4.0.9
+      hono: file:vendor/hono
     dev: true
 
   /@hono/vite-dev-server@0.8.2(hono@4.0.9):
@@ -314,7 +314,7 @@ packages:
       hono: '*'
     dependencies:
       '@hono/node-server': 1.8.2
-      hono: 4.0.9
+      hono: file:vendor/hono
       miniflare: 3.20240223.0
       minimatch: 9.0.3
     transitivePeerDependencies:
@@ -559,10 +559,6 @@ packages:
     resolution: {integrity: sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==}
     dev: true
 
-  /hono@4.0.9:
-    resolution: {integrity: sha512-XkFx6y6jAl08bGmoy53oGtHl8eHUixvmBulfcghrSySoJD3cW4UfFUa7JDGLOsIeJUv/a9d2pBFQUX7rzRnjvA==}
-    engines: {node: '>=16.0.0'}
-
   /miniflare@3.20240223.0:
     resolution: {integrity: sha512-8T/36FEfvsL4aMF7SLZ28v+PQL0jsUlVw/u114GYcdobkyPax9E6Ahn0XePOHEqLxQSndwPee+eS1phHANFePA==}
     engines: {node: '>=16.13'}
@@ -753,3 +749,8 @@ packages:
   /zod@3.22.4:
     resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
     dev: true
+
+  file:vendor/hono:
+    resolution: {directory: vendor/hono, type: directory}
+    name: hono
+    engines: {node: '>=16.0.0'}
